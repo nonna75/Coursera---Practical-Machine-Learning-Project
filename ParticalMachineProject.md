@@ -299,14 +299,13 @@ testData <- testData[,-near_zero]
 
 ## Prediction with classification trees
 ```{r echo=TRUE}
-
-
 set.seed(12345)
 DessTree <-rpart(classe ~ ., data=trainData,method="class")
 fancyRpartPlot(DessTree)
-![plot of chunk daily](desstree.jpg) 
-
 ```
+![plot of chunk daily](desstress.jpg) 
+
+
 
 ## Prediction on Test dataset
 ```{r echo=TRUE}
@@ -414,9 +413,9 @@ With random forest, we reach an accuracy of 99.3% using cross-validation with 5 
 ### let's plot the model 
 ```{r echo=TRUE}
 plot(model_RF)
-![plot of chunk daily](forestTress.jpeg) 
 
 ```
+![plot of chunk daily](forestTress.jpeg) 
 
 ## Train with gradient boosting method
 
@@ -459,9 +458,10 @@ print(model_GBM)
 ```{r echo=TRUE}
 
 plot(model_GBM)
-![plot of chunk daily](booting.jpeg) 
 
 ```
+![plot of chunk daily](booting.jpeg) 
+
 
 
 ```{r echo=TRUE}
